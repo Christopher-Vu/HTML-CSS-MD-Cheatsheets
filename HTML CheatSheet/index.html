@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--The DOCTYPE html tag should begin every html page-->
+
+<!--This website: https://validator.w3.org/ will check your html document for errors and potential important missing tags-->
+<!--Note that the index.html file name is the page that users are directed to when a page is not specified in their url-->
+
+<!--Every html file starts and ends with the html tags; <> indicates a tag and a slash indicates a closing tag-->
+<!-- The lang="en" attribute after the html tag declares the language fo the website-->
+<html lang="en">
+
+    <!--The head tag contains metadata-->
+    <head>
+        <!--Meta tags define metadata within a site-->
+
+        <!--Charset defines what encoding method will be used-->
+        <meta charset="UTF-8">
+        <!--A name and content attribute to a meta tag defines metadata about many different things (defined by what the name attribute is set to)-->
+        <meta name="author" content="Christopher Vu">
+        <meta name="description" content="A cheatsheet for HTML syntax">
+        <!--Meta name attributes include "viewport", "keywords", "author", "description", "publisher", "copyright", "description", "page-topic", "page-type", "audience", and more-->
+
+        <title>This Is The Title</title>
+        
+        <!--The link element links the site with an external resource; the "rel" attribute is how it relates to the webpage, "href" is a hypertext reference (often a link or file directory), and "type" which is the type of resource-->
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <!--Below is a CSS style guide being added/used via link tag-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+
+    </head>
+
+    <!-- The body tag will contain all of the data that the user will see-->
+    <body>
+        <!--Much of the below is self explanitory-->
+        <h1>This Is a Heading 1 Element (Largest, 1 per page)</h1>
+
+        <!--<hr> is a line break that goes across the page-->
+        <hr>
+
+        <!--Within the paragraph below is a <br> tag that acts like a return key or \n in python-->
+        <p>This is a paragraph with <br> A line break in between</p>
+
+        <h2>This is a Heading 2 Element</h2>
+        <h3>This is a Heading 3 Element, and so on (goes up to h6)</h3>
+
+        <p>
+        This is <em>emphasized</em> text <br>
+        This is <strong>strong</strong> text <br>
+        &nbsp;This text has a space before it <br>
+        Most html entities (symbols) have an & before them followed by an entity code. <br>
+        The abbr tag allows you to give tool tips for abbreviations like this: <abbr title="Gavin-Kai Vida">GKV</abbr>
+        </p>
+
+        <!--The adress tag lets the brower know that the following text is an address;-->
+        <address>Margaritaville Island Reserve Riviera Cancun<br>Bahia Petempich Puerto Morelos, Mexico<br>Colonia Morelos, México 77580</address>
+
+    </body>
+
+</html>
