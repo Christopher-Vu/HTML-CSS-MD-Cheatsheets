@@ -57,3 +57,34 @@ ___
 2. Item 2
 3. Item 3
 
+<!-- Inline Code Block (backtick) -->
+`<p>This is a paragraph</p>`
+
+<!-- Paragraphs (link w/ exclamation) -->
+![Markdown](https://markdown-here.com/img/icon256.png)
+
+<!-- Code Block (triple backtick) -->
+```
+while True:
+    print("Hello World")
+```
+
+```Python
+def add(num1, num2):
+    return num1 + num2
+
+print(add(2, 2))
+```
+
+<!-- Tables (Lines and underscores; spacing was done for aesthetic effect, not necessary) -->
+
+|First      |Last    |
+|-----------|--------|
+|Christopher|Vu      |
+|Elise      |Vu      |
+
+<!-- Task Lists (Asterisk + Brackets w/ x for completion) -->
+
+* [x] Completed task 1
+* [x] Completed task 2
+* [ ] Uncompleted Task
