@@ -37,3 +37,23 @@ ___
 <!-- Blockquote (>) -->
 > Quote using > that thing
 
+<!-- Links (brackets for linkname, parenthesis for link) -->
+
+[LinkName](https://docs.google.com/document/d/1h4PfwndIOuLa_GmMNa6Bdhjk1Vy3lStleSLQLjmtMk4/edit)
+
+<!-- use a space within parenthesis followed by a string for title (text when mouse is hovering) -->
+
+[LinkName](https://docs.google.com/document/d/1h4PfwndIOuLa_GmMNa6Bdhjk1Vy3lStleSLQLjmtMk4/edit "Link Title")
+
+<!-- Unordered Lists (asterisks / tabs) -->
+* Item 1
+* Item 2
+* Item 3
+    * Nested Item 1
+    * Nested Item 2
+
+<!-- Ordered Lists -->
+1. Item 1
+2. Item 2
+3. Item 3
+
