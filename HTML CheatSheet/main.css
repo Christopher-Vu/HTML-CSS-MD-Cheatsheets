@@ -1,0 +1,10 @@
+/*IGNORE THIS CSS FILE; THIS IS SIMPLY TO SHOW HOW TO PUT A STYLE GUIDE INTO HTML USING A LINK TAG*/
+
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
