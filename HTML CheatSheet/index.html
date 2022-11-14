@@ -26,68 +26,103 @@
         <!--Below is a CSS style guide being added/used via link tag-->
         <link rel="stylesheet" href="style_example.css" type="text/css">
 
+        <!--Nav, as the name suggests, provides navigation links to areas of the site-->
+        <nav>
+            <ul>
+                <li>
+                    <!--A hashtag followed by the section id will lead to the desired section. This first example is spaced out to show teh tags more easily.-->
+                    <a href="#example_section">Example Section</a>
+                </li>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </nav>
+
     </head>
 
     <!-- The body tag will contain all of the data that the user will see-->
     <body>
-        <!--Much of the below is self explanitory-->
-        <h1>This Is a Heading 1 Element (Largest, 1 per page)</h1>
 
-        <!--<hr> is a line break that goes across the page-->
-        <hr>
+        <section id="example_section">
+            <p>This text is within it's own section. The section id allows javascript to find the section more easily.</p>
+        </section>
 
-        <!--Within the paragraph below is a <br> tag that acts like a return key or \n in python-->
-        <p>This is a paragraph with <br> A line break in between</p>
+        <section id="text"> 
+            <!--Much of the below is self explanitory-->
+            <h1>This Is a Heading 1 Element (Largest, 1 per page)</h1>
 
-        <h2>This is a Heading 2 Element</h2>
-        <h3>This is a Heading 3 Element, and so on (goes up to h6)</h3>
+            <!--<hr> is a line break that goes across the page-->
+            <hr>
 
-        <p>
-        This is <em>emphasized</em> text <br>
-        This is <strong>strong</strong> text <br>
-        &nbsp;This text has a space before it <br>
-        Most html entities (symbols) have an & before them followed by an entity code. <br>
-        The abbr tag allows you to give tool tips for abbreviations like this: <abbr title="Gavin-Kai Vida">GKV</abbr>
-        </p>
+            <!--Within the paragraph below is a <br> tag that acts like a return key or \n in python-->
+            <p>This is a paragraph with <br> A line break in between</p>
 
-        <!--The adress tag lets the brower know that the following text is an address;-->
-        <address>Margaritaville Island Reserve Riviera Cancun<br>Bahia Petempich Puerto Morelos, Mexico<br>Colonia Morelos, México 77580</address>
+            <h2>This is a Heading 2 Element</h2>
+            <h3>This is a Heading 3 Element, and so on (goes up to h6)</h3>
 
-        <h2>List Types</h2>
+            <p>
+            This is <em>emphasized</em> text <br>
+            This is <strong>strong</strong> text <br>
+            &nbsp;This text has a space before it <br>
+            Most html entities (symbols) have an & before them followed by an entity code. <br>
+            The abbr tag allows you to give tool tips for abbreviations like this: <abbr title="Gavin-Kai Vida">GKV</abbr>
+            </p>
 
-        <!--<ol> creates an ordered list, <li> is a list item-->
-        <ol>
-            <li>Ordered list element 1</li>
-            <li>Ordered list element 2</li>
-            <li>Ordered list element 3</li>
-        </ol>
+            <!--The adress tag lets the brower know that the following text is an address;-->
+            <address>Margaritaville Island Reserve Riviera Cancun<br>Bahia Petempich Puerto Morelos, Mexico<br>Colonia Morelos, México 77580</address>
+        </section>
 
-        <!--<ul> creates an unordered list, <li> is a list item-->
-        <ul>
-            <li>Unordered list item 1</li>
-            <li>Unordered list item 2</li>
-            <li>Unordered list item 3</li>
-        </ul>
+        <section id="lists">
+            <h2>List Types</h2>
 
-        <!--<dl> creates a description list, <dt> is a description term, <dd> is a description detail-->
-        <dl>
-            <dt>Description term 1</dt>
-            <dd>Description detail 1</dd>
-            <dt>Description term 2</dt>
-            <dd>Description detail 2</dd>
-            <dt>Description term 3</dt>
-            <dd>Description detail 3</dd>
-        </dl>
-        
-        <h2>Links</h2>
-        
-        <!--Note that visited links are purple and unvisited links are bright blue-->
-        <p>This is an abbreviation example from earlier, now with an a tag w/ an href attribute for a link; note that this is an absolute reference (to a place that exists on the web)
-            <abbr title="Gavin-Kai Vida">
-                <a href="https://github.com/G-Knanochaos">
-                GKV</a>
-            </abbr>
-        </p>
+            <!--<ol> creates an ordered list, <li> is a list item-->
+            <ol>
+                <li>Ordered list element 1</li>
+                <li>Ordered list element 2</li>
+                <li>Ordered list element 3</li>
+            </ol>
+
+            <!--<ul> creates an unordered list, <li> is a list item-->
+            <ul>
+                <li>Unordered list item 1</li>
+                <li>Unordered list item 2</li>
+                <li>Unordered list item 3</li>
+            </ul>
+
+            <!--<dl> creates a description list, <dt> is a description term, <dd> is a description detail-->
+            <dl>
+                <dt>Description term 1</dt>
+                <dd>Description detail 1</dd>
+                <dt>Description term 2</dt>
+                <dd>Description detail 2</dd>
+                <dt>Description term 3</dt>
+                <dd>Description detail 3</dd>
+            </dl>
+        </section>
+            
+        <section id="links">
+            <h2>Links</h2>
+            
+            <!--Note that visited links are purple and unvisited links are bright blue-->
+            <p>This is an abbreviation example from earlier, now with an a tag w/ an href attribute for a link; note that this is an absolute reference (to a place that exists on the web)
+                <abbr title="Gavin-Kai Vida">
+                    <a href="https://github.com/G-Knanochaos">
+                    GKV</a>
+                </abbr>
+            </p>
+
+            <p>This is a link to another page; note that this is a relative reference, and the file pathing is from the perspective of the curring html file (not the web as a whole) <a href="ignore.html">other page</a></p>
+
+            <p>The following link is a download link; it has the same syntax but with the word 'download' in the a tag: <a href="image_example.png" download>HTML5 icon</a></p>
+
+            <p>The following is a contact link using the keyword 'mailto' within the href: <a href="mailto:example_email@gmail.com"></a>email address</p>
+
+            <p>The following is a telephone number using the keyword 'tel' within the href: <a href="tel:+1234567890">phone number</a></p>
+
+            <p>With the target attribute, you can define how a link is opened (in this example, in another tab): <a href="ignore.html" target="_blank">other page in new tab</a></p>
+
+        </section>
 
     </body>
 
