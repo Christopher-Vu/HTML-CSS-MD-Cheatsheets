@@ -24,7 +24,12 @@
         <!--The link element links the site with an external resource; the "rel" attribute is how it relates to the webpage, "href" is a hypertext reference (often a link or file directory), and "type" which is the type of resource-->
         <link rel="icon" href="html5.png" type="image/x-icon">
         <!--Below is a CSS style guide being added/used via link tag-->
-        <link rel="stylesheet" href="style_example.css" type="text/css">
+        <link rel="stylesheet" href="examples/style_example.css" type="text/css">
+
+    </head>
+
+    <!-- The body tag will contain all of the data that the user will see-->
+    <body>
 
         <!--Nav, as the name suggests, provides navigation links to areas of the site-->
         <nav>
@@ -38,12 +43,7 @@
                 <li><a href="#links">Links</a></li>
             </ul>
         </nav>
-
-    </head>
-
-    <!-- The body tag will contain all of the data that the user will see-->
-    <body>
-
+        
         <section id="example_section">
             <p>This text is within it's own section. The section id allows javascript to find the section more easily.</p>
         </section>
@@ -112,15 +112,34 @@
                 </abbr>
             </p>
 
-            <p>This is a link to another page; note that this is a relative reference, and the file pathing is from the perspective of the curring html file (not the web as a whole) <a href="ignore.html">other page</a></p>
+            <p>This is a link to another page; note that this is a relative reference, and the file pathing is from the perspective of the curring html file (not the web as a whole) <a href="examples/ignore.html">other page</a></p>
 
-            <p>The following link is a download link; it has the same syntax but with the word 'download' in the a tag: <a href="image_example.png" download>HTML5 icon</a></p>
+            <p>The following link is a download link; it has the same syntax but with the word 'download' in the a tag: <a href="examples/image_example.png" download>HTML5 icon</a></p>
 
             <p>The following is a contact link using the keyword 'mailto' within the href: <a href="mailto:example_email@gmail.com"></a>email address</p>
 
             <p>The following is a telephone number using the keyword 'tel' within the href: <a href="tel:+1234567890">phone number</a></p>
 
-            <p>With the target attribute, you can define how a link is opened (in this example, in another tab): <a href="ignore.html" target="_blank">other page in new tab</a></p>
+            <p>With the target attribute, you can define how a link is opened (in this example, in another tab): <a href="examples/ignore.html" target="_blank">other page in new tab</a></p>
+
+            <p>Setting the href to / takes you back to the index page: <a href="/">index</a></p>
+
+        </section>
+
+        <section id="images">
+
+            <!--img does not require a closing tag in HTML5. It has a src (source) and alt attribute; the source is the pathing to the image and alt is for assistive technology-->
+            <!--If the image is not found, the alt text appears. Assisstive technology will read the alt text.-->
+            <!--The title complements the image (like a description); seen when the cursor hovers over the image-->
+            <img src="examples/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML">
+
+            <!--It is suggested to provide width and height; if only one is provided, the browser will change the size to match the original aspect ratio-->
+            <img src="examples/html_logo_300x300.png" alt="Smaller HTML5 Logo" title="Size changed with html" width="100">
+
+            <!--The loading attribute changes when an image loads; 'eager' is the default. In short, images above the 'fold' (the bottom of the page when it is first loaded) should be loaded
+            eagerly, while images below the fold should be loaded lazily ('lazy').-->
+            <img src="examples/html_logo_300x300.png" alt="Smaller HTML5 Logo" title="Size changed with html" width="300", loading="lazy">
+            
 
         </section>
 
