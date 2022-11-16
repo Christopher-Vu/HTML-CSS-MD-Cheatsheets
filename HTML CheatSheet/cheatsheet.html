@@ -30,48 +30,54 @@
 
     <!-- The body tag will contain all of the data that the user will see-->
     <body>
-
-        <!--Nav, as the name suggests, provides navigation links to areas of the site-->
-        <nav>
-            <ul>
-                <li>
-                    <!--A hashtag followed by the section id will lead to the desired section. This first example is spaced out to show teh tags more easily.-->
-                    <a href="#example_section">Example Section</a>
-                </li>
-                <li><a href="#text">Text</a></li>
-                <li><a href="#lists">Lists</a></li>
-                <li><a href="#links">Links</a></li>
-            </ul>
-        </nav>
+        <!--Header includes navigational links and introductory information (see "semantics")-->
+        <header>
+            <!--Nav, as the name suggests, provides navigation links to areas of the site-->
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <!--A hashtag followed by the section id will lead to the desired section. This first example is spaced out to show teh tags more easily.-->
+                        <a href="#example_section">Example Section</a>
+                    </li>
+                    <li><a href="#text">Text</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </nav>
+        </header>
         
         <section id="example_section">
             <p>This text is within it's own section. The section id allows javascript to find the section more easily.</p>
         </section>
 
-        <section id="text"> 
-            <!--Much of the below is self explanitory-->
-            <h1>This Is a Heading 1 Element (Largest, 1 per page)</h1>
+        <!--Main represents the dominant body of text/content on a website (see "semantics")-->
+        <main>
+            <section id="text"> 
+                <!--Much of the below is self explanitory-->
+                <h1>This Is a Heading 1 Element (Largest, 1 per page)</h1>
 
-            <!--<hr> is a line break that goes across the page-->
-            <hr>
+                <!--<hr> is a line break that goes across the page-->
+                <hr>
 
-            <!--Within the paragraph below is a <br> tag that acts like a return key or \n in python-->
-            <p>This is a paragraph with <br> A line break in between</p>
+                <!--Within the paragraph below is a <br> tag that acts like a return key or \n in python-->
+                <p>This is a paragraph with <br> A line break in between</p>
 
-            <h2>This is a Heading 2 Element</h2>
-            <h3>This is a Heading 3 Element, and so on (goes up to h6)</h3>
+                <h2>This is a Heading 2 Element</h2>
+                <h3>This is a Heading 3 Element, and so on (goes up to h6)</h3>
 
-            <p>
-            This is <em>emphasized</em> text <br>
-            This is <strong>strong</strong> text <br>
-            &nbsp;This text has a space before it <br>
-            Most html entities (symbols) have an & before them followed by an entity code. <br>
-            The abbr tag allows you to give tool tips for abbreviations like this: <abbr title="Gavin-Kai Vida">GKV</abbr>
-            </p>
+                <p>
+                This is <em>emphasized</em> text <br>
+                This is <strong>strong</strong> text <br>
+                This is <mark>marked</mark> (highlighted) text <br>
+                &nbsp;This text has a space before it <br>
+                Most html entities (symbols) have an & before them followed by an entity code. <br>
+                The abbr tag allows you to give tool tips for abbreviations like this: <abbr title="Gavin-Kai Vida">GKV</abbr>
+                </p>
 
-            <!--The adress tag lets the brower know that the following text is an address;-->
-            <address>Margaritaville Island Reserve Riviera Cancun<br>Bahia Petempich Puerto Morelos, Mexico<br>Colonia Morelos, México 77580</address>
-        </section>
+                <!--The adress tag lets the brower know that the following text is an address;-->
+                <address>Margaritaville Island Reserve Riviera Cancun<br>Bahia Petempich Puerto Morelos, Mexico<br>Colonia Morelos, México 77580</address>
+            </section>
+        </main>
 
         <section id="lists">
             <h2>List Types</h2>
@@ -160,6 +166,19 @@
 
         <section id="Semantic Tags"></section>
             <h2>Semantic Tags</h2>
+                <p>Semantic; provide meaning (generally stuff that helps with page naviagtion for both bots and people). Also important for acessibility to screen readers and assisitive technology. <br>
+                Semantics usually do not show up on the website, just provide meaning to the code <br>
+                Semantics includes the header, footer, navigation, and more. <br>
+                Sections and articles are also semantics.</p>
+                
+                <aside>
+                    An aside is a section of complementary text.
+                </aside>
+                
+                <details>
+                    <summary>The summary in a details tag previews more information.</summary>
+                    <p>Further content is revealed on user request (in this case, using an arrow).</p>
+                </details>
 
     </body>
 
