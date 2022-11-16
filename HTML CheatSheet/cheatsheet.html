@@ -127,6 +127,7 @@
         </section>
 
         <section id="images">
+            <h2>Images</h2>
 
             <!--img does not require a closing tag in HTML5. It has a src (source) and alt attribute; the source is the pathing to the image and alt is for assistive technology-->
             <!--If the image is not found, the alt text appears. Assisstive technology will read the alt text.-->
@@ -138,10 +139,27 @@
 
             <!--The loading attribute changes when an image loads; 'eager' is the default. In short, images above the 'fold' (the bottom of the page when it is first loaded) should be loaded
             eagerly, while images below the fold should be loaded lazily ('lazy').-->
-            <img src="examples/html_logo_300x300.png" alt="Smaller HTML5 Logo" title="Size changed with html" width="300", loading="lazy">
+            <img src="examples/html_logo_300x300.png" alt="Smaller HTML5 Logo" title="Size changed with html" width="300" loading="lazy">
             
+            <!--The figure tag is used to represent self contained content; most often ti is used to put captions on images and similar content-->
+            <figure>
+                <img src="examples/html_logo_300x300.png" alt="Smaller HTML5 Logo" title="Size changed with html" width="300" loading="lazy">
+                
+                <!--The figure caption must either be the first or the last element-->
+                <figcaption>
+                    This is an HTML logo, and this is a caption. Below is a code snippet.
+                
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                </p>
+
+                </figcaption>    
+            </figure>
 
         </section>
+
+        <section id="Semantic Tags"></section>
+            <h2>Semantic Tags</h2>
 
     </body>
 
