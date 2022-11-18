@@ -193,8 +193,15 @@
             <br>
             <!--Note that tables require some CSS to be functional; the bare minimum CSS is provided in the examples/style_example.css file (basically just a border))-->
             <table>
-                <!--tr is a table row, td is a piece of table data-->
+                <!--tr is a table row-->
                 <tr>
+                    <!--th is a table heading-->
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+
+                <tr>
+                    <!--td is a piece of table data-->
                     <td>
                         <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
                     </td>
@@ -206,12 +213,20 @@
                     </td>
                     <td>Eat Lunch</td>
                 </tr>
+
                 <tr>
-                    <td>
-                        <time datetime="12:00">12pm</time>-<time datetime="14:00">2pm</time>
-                    </td>
-                    <td>Study</td>
+                    <!--colspan changes how many columns a td takes up-->
+                    <td colspan="2">Free Time</td>
                 </tr>
+
+                <tr>
+                    <!--Rowspan does the same but for rows-->
+                    <td rowspan="2">All other time</td>
+
+                    <td>Free Time</td>
+                    <td>Sleep</td>
+                </tr>
+
             </table>
         </section>
 
