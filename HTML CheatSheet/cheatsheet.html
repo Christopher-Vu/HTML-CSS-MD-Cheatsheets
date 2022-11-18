@@ -193,39 +193,57 @@
             <br>
             <!--Note that tables require some CSS to be functional; the bare minimum CSS is provided in the examples/style_example.css file (basically just a border))-->
             <table>
-                <!--tr is a table row-->
-                <tr>
-                    <!--th is a table heading-->
-                    <th>Time</th>
-                    <th>Activity</th>
-                </tr>
+                <!--Caption appears spanning all columsn and is centered-->
+                <caption>My Daily Schedule</caption>
 
-                <tr>
-                    <!--td is a piece of table data-->
-                    <td>
-                        <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
-                    </td>
-                    <td>Write Code</td>
-                </tr>
-                <tr>
-                    <td>
-                        <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
-                    </td>
-                    <td>Eat Lunch</td>
-                </tr>
+                <!--thead (table head) is a semantic tag for the table head (often coplumn labels)-->
+                <thead>
+                    <tr>
+                        <!--th is a table heading-->
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
 
-                <tr>
-                    <!--colspan changes how many columns a td takes up-->
-                    <td colspan="2">Free Time</td>
-                </tr>
+                <!--tbody (table body) is another semantic tag with self explanitory meaning-->
+                <tbody>
+                    <!--tr is a table row-->
+                    <tr>
+                        <!--td is a piece of table data-->
+                        <td>
+                            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                        </td>
+                        <td>Write Code</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                        </td>
+                        <td>Eat Lunch</td>
+                    </tr>
 
-                <tr>
-                    <!--Rowspan does the same but for rows-->
-                    <td rowspan="2">All other time</td>
+                    <tr>
+                        <!--colspan changes how many columns a td takes up-->
+                        <td colspan="2">Free Time</td>
+                    </tr>
 
-                    <td>Free Time</td>
-                    <td>Sleep</td>
-                </tr>
+                    <tr>
+                        <!--Rowspan does the same but for rows-->
+                        <td rowspan="2">All other time</td>
+
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+
+                <!--tfoot is table foot (often for totaling the columns/rows)-->
+                <tfoot>
+                    <tr>
+                        <td colspan="2">That is my daily schedule</td>
+                    </tr>
+                </tfoot>
 
             </table>
         </section>
