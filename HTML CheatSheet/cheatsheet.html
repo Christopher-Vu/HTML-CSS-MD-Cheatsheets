@@ -164,7 +164,7 @@
 
         </section>
 
-        <section id="Semantic Tags"></section>
+        <section id="Semantic_Tags">
             <h2>Semantic Tags</h2>
                 <p>Semantic; provide meaning (generally stuff that helps with page naviagtion for both bots and people). Also important for acessibility to screen readers and assisitive technology. <br>
                 Semantics usually do not show up on the website, just provide meaning to the code <br>
@@ -180,6 +180,42 @@
                     <p>Further content is revealed on user request (in this case, using an arrow).</p>
                 </details>
 
+                <div>
+                    <p>The div tag is almost identical to the section tag (both can be styled in CSS and define a section of code), but the div 
+                        tag does not carry any semantic meaning when first created (all of it's meaning is deived from how it is styled in CSS).</p>
+                </div>
+                <p><span>Span</span> is another semantic element (equivalent to div but inline).</p>
+        </section>
+
+        <section id="Tables">
+            <h2>Tables</h2>
+
+            <br>
+            <!--Note that tables require some CSS to be functional; the bare minimum CSS is provided in the examples/style_example.css file (basically just a border))-->
+            <table>
+                <!--tr is a table row, td is a piece of table data-->
+                <tr>
+                    <td>
+                        <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                    </td>
+                    <td>Eat Lunch</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="12:00">12pm</time>-<time datetime="14:00">2pm</time>
+                    </td>
+                    <td>Study</td>
+                </tr>
+            </table>
+        </section>
+
+                
     </body>
 
 </html>
