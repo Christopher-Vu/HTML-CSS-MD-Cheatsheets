@@ -252,7 +252,24 @@
         </section>
 
         <section id="Forms&Input">
-            
+            <!--form is used for input in html; action is where the information from the form is sent. method describes how the data is sent-->
+            <!--GET carries request parameter appended in URL string while POST carries request parameter in message body-->
+
+            <form action="https://httpbin.org/get" method="get">
+                <!--Most below are self explanitory; note that the 'for' attr in the label tag, the 'name' attr in the input tag, and the 
+                    'id' attr in the input tag should all be the same-->
+                <!--Autocomplete enables autocomplete, required makes the input required, autofocus focuses the text when the page loads-->
+                <!--Only one input can be autofocused in a page-->
+                <!--These inputs and labels are wrapped in paragraph tags in order to create line breaks between inputs-->
+                <p>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                </p>
+            </form>
         </section>
 
                 
