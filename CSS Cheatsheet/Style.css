@@ -1,3 +1,22 @@
-body {
-    background: red;
+/*Classes and ids style a specific element in a CSS page (that element specifically, not
+all elements of that type). To reference and style a class, use a . followed by the name*/
+.title {
+    color: red;
 }
+
+.subtitle {
+    color: blue;
+}
+
+/*To reference an id, use a hash*/
+#contact-us {
+    color: green;
+}
+
+/*
+SPECIFICITY IN CSS
+Specificity is a concept referring to the face that if one element is styled multiple
+times, the prevailing style (that will show on screen) is the one that is the most specific.
+The order for specificity is headers, class selectors, id selectors, and inline styling.
+*/
+
