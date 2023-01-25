@@ -20,3 +20,37 @@ times, the prevailing style (that will show on screen) is the one that is the mo
 The order for specificity is headers, class selectors, id selectors, and inline styling.
 */
 
+/*PSEUDOCLASSES or PSEUDOSELECTORS
+Deals with interactivity; any time a design needs to change based on a way that the user
+interacts with it. You use the name of the element followed by a colon and the action*/
+h2:hover {
+    color: red;
+}
+
+/*When selecting an element from a list of children, you use the child as the element name
+instead of the parent (ex: the first child of an unordered list is li:first-child, not ul:first-child)*/
+li:first-child {
+    color: steelblue;
+}
+
+/*This can also be done with nth-child, which does as it says*/
+li:nth-child(2) {
+    color:aqua;
+}
+
+/*Only works if the element is an only child*/
+li:only-child {
+    color: purple;
+}
+
+/*The link refers to a link before it is clicked, and visited is a link after it is visited*/
+#google-link:link {
+    color: blue;
+}
+
+
+#google-link:visited {
+    color: red;
+}
+
+/*all pseudoselectors or pseudoclasses https://www.w3schools.com/css/css_pseudo_classes.asp*/
