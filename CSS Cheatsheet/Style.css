@@ -54,3 +54,24 @@ li:only-child {
 }
 
 /*all pseudoselectors or pseudoclasses https://www.w3schools.com/css/css_pseudo_classes.asp*/
+
+/*This means "every a tag that follows an h2"; it will style that element no matter the class*/
+h2 + a {
+    color : red;
+}
+
+/*This means every "button follows by a text area in the same parent"; it will style that element 
+only if in the same class*/
+textarea ~ button {
+    color:purple;
+}
+
+/*This means every "li inside of a ul"; note that the li must be a direct child of the ul*/
+ul > li {
+    color: blue;
+}
+
+/*Any li that goes up to (propogates up to) a ul; the li does not need to be a direct child of the ul*/
+ul li {
+    color: green;
+}
