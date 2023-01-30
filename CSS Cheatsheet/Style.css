@@ -55,6 +55,9 @@ li:only-child {
 
 /*all pseudoselectors or pseudoclasses https://www.w3schools.com/css/css_pseudo_classes.asp*/
 
+
+/*ADVANCED SELECTORS*/
+
 /*This means "every a tag that follows an h2"; it will style that element no matter the class*/
 h2 + a {
     color : red;
@@ -75,3 +78,23 @@ ul > li {
 ul li {
     color: green;
 }
+
+/*ATTRIBUTE SELECTORS*/
+
+/*Attribute selectors allow you to select certain elements based on their attribtues*/
+/*The format is:    element[attribute=value]   */
+/*The carrot (^=) selects everything in which the attribute STARTS with the desired value*/
+img[src^="Other Files"] {
+    border: 30px solid black;
+}
+
+/*The dollar sign ($=) selects everything in which the attribute ENDS with the desired value*/
+img[src$="house.jpg"] {
+    border: 20px solid black;
+}
+
+/*Self explanitory*/
+img[src="Other Files/mountains.jpg"] {
+    border: 10px solid black;
+}
+
