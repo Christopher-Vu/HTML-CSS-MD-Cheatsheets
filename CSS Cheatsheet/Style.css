@@ -98,3 +98,13 @@ img[src="Other Files/mountains.jpg"] {
     border: 10px solid black;
 }
 
+/*Whitespace property; by adding a space in a class, the two (or more) names are treated as 
+separate classes applied to the same element; it is selected via this format
+element_name[selector~=name]*/
+h2[class~=article-subtitle] {
+    background: forestgreen
+}
+
+/*PROPERTIES*/
+/*All properties use a colon and a semicolon. Before the colon is the property (what is going 
+to change, and before the semicolon is the value)*/
