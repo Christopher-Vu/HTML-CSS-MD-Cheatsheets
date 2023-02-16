@@ -108,3 +108,46 @@ h2[class~=article-subtitle] {
 /*PROPERTIES*/
 /*All properties use a colon and a semicolon. Before the colon is the property (what is going 
 to change, and before the semicolon is the value)*/
+#services {
+    color: green; /*<--- this is the property part*/
+    /*Note you can put multiple properties*/
+}
+
+/*COLORS*/
+#title {
+    color: rgb(186, 133, 9);
+}
+
+/*Note that the body contains all other tags and text, so body can be used for background*/
+body {
+    background: rgb(204, 229, 255);
+}
+
+/*BACKGROUNDS*/
+/*This code is not run because it is incomplete*/
+/*
+body {
+    background: url("https://images.unsplash.com/photo-1562043236-559c3b65a6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBlc3xlbnwwfHwwfHw%3D&w=1000&q=80")
+}
+*/
+/*Note that the image will repeat the image over rather than resizing it to fit the page*/
+/*The url can also be a file directory*/
+
+/*"example_background" is an empty div that I am using to demonstrate backgrounds*/
+#example-background {
+    height: 400px;
+    width: 70%;
+
+    background: url("https://images.unsplash.com/photo-1562043236-559c3b65a6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBlc3xlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-repeat: no-repeat ;
+    /*^^^ will leave the image as it's original size; IT WILL NOT RESIZE TO FIT, ONLY DISABLE THE REPEAT*/
+    background-size: 400px 70%;
+    /*^^^ Will resize to whatever value you input, but often will not match the height and width of the div exactly */
+    background-size: contain;
+    /*^^^ Will resize to fit the dimensions, but will not change the proportions of the image*/
+    background-size: cover;
+    /*^^^ Will resize to fit the dimensions (WILL NOT change proportions, it CUTS OFF the image).*/
+}
+
+/*For changing transparency, use an rgba value (rgb and alpha). Example below*/
+rgba(256, 256, 256, 0.4);
