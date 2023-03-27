@@ -150,4 +150,152 @@ body {
 }
 
 /*For changing transparency, use an rgba value (rgb and alpha). Example below*/
-rgba(256, 256, 256, 0.4);
+/*rgba(256, 256, 256, 0.4);*/
+
+#linear-gradient-example {
+    height: 150px;
+    width: 70%;
+
+    /*linear-gradient() does exactly as it says; the first parameter is the direction of the gradient, and 
+    the rest of the parameters are the colors that the gradient goes through*/
+    background: linear-gradient(to top right, red, steelblue, blue);
+    background-size: cover;
+    /*Note that the direction of the gradiant can also be set with degrees*/
+    background: linear-gradient(215deg, red, steelblue, blue);
+}
+
+#radial-gradient-example {
+    height: 150px;
+    width: 70%;
+
+    /*radial-gradient() starts at the center and moves to the edges. It also allows you to set proportions for the colors*/
+    /*In the first parameter, you can type either "ellipse" or "circle" (ellipse is the default) to change the way the gradient behaves.*/
+    background: radial-gradient(red 20%, steelblue 40%, blue 55%)
+}
+
+/*UNITS*/
+
+/*There are two types of units, absolute and relative.*/
+/*Absolute units are things like mm, cm, inches, etc.; they are the same size on every display*/
+/*Relative units, like percentages, will take up the same ratio no matter the display.*/
+/*Pixels are technically absolute, but will adjust somewhat to the display that they are on (by taking up multiple pixels of the display
+for each pixel of the image if the display is too large).*/
+
+#units-example {
+    height: 10vh; /*vh is a unit where 1 vh is 1% of the HEIGHT viewport; the viewport is just how much space you see when loading the site*/
+    width: 10vw; /*Same thing as vh but width*/
+    width: 70%; /*Simply takes up a percentage of the parent element*/
+    font-size: 2em; /*em is just a factor of the standard size; this would mean set font size to double the standard font size*/
+}
+
+/*TEXT MANIPULATION*/
+.link{
+    text-decoration: underline; /*this can also be set to overline, line-through, or none*/
+    text-transform:uppercase; /*self explan; can also be changed to lowercase, caps, etc.*/
+}
+
+body {
+    text-align: justify; /*This can be set to left, right, center, or justify. First three are self
+    explanitory, and justify makes all text stretch to the same width*/
+    font-size: 2em; /*self explan*/
+}
+
+#title {
+    font-weight: 800; /*Changes bolding (default is ~400)*/
+}
+
+.italics {
+    font-style: italic; /*3 modes; normal, italics, and oblique*/
+}
+
+/*3 types of fonts; 
+serif: Small stylistic lines at the end of some letters. Often used in papers or essays. (Times new roman/georgia)
+sans-serif: Doesn't have those lines; easier readability. (arial/calibri)
+monospace: All characters take up the same width. (courier new)*/
+
+body {
+    font-family: serif; /*This is how you declare a font family*/
+    font-family: "Courier New", serif; /*This means use times new roman if it is avaiable, and if not, use serif*/
+}
+
+/*https://fonts.google.com/ at this site, you can stylize and download fonts*/
+/*In order to import a font to be used, simply paste the link tag that google gives you above 
+the style sheet tag*/
+/*the font-family: font attribute can also be added to any elemenet that uses a font*/
+
+/*BOX MODEL*/
+/*Each element has, surrounding it, the padding, border, and margin*/
+/*The padding is directly outside of the content, and gives space between the content and the border*/
+/*The border is the divide between the padding and margin; doesn't take up any space on its own, but it can be
+styled to do so*/
+/*The margin is the space between the border and all other content; padding makes internal space, the margin makes external space*/
+
+/*By clicking on the icon in the F12 Menu that displays a screen, you can see how your design
+will look on different devices*/
+
+/*Borders*/
+img[src$="mountains.jpg"] {
+    border: 10px dotted rgb(154, 174, 200);
+}
+/*Most of the above is pretty self explanitory; the 10px is the thickness of the border,
+the 'dotted attribute is the style of the border (can also be solid, dashed, or double)',
+and the color is the color*/
+
+/*Margin and Padding*/
+
+img[src$="mountains.jpg"] {
+    padding: 20px;
+    /*If the padding is only 1 value, that value will be consistent on all sides of the element*/
+    margin: 40px;
+    /*Same thing but instead of being under the border, it's outside of it*/
+}
+
+img[src$="house.jpg"]{
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    /*Pretty self explanitory*/
+}
+
+img[src$="marguerite.jpg"]{
+    padding: 100px 40px 5px 0px;
+    /*You can enter the padding on the four sides as such; the order is top, right, bottom, left*/
+    /*Same can be done with margin*/
+}
+
+/*Float and Display Types*/
+/*float will move an element in a certain direction and move all other elements below upwards to fill 
+the empy space that it leaves*/
+.link {float: right;}
+
+img[src$="mountains.jpg"]{
+    float: right;
+}
+
+/*You can set floats as "inherit", which will take the float property of the parent element*/
+/*You can also set float as "none", which is self explanitory*/
+
+/*Display types change the way that elements look*/
+
+/*display:none removes the element entirely; doesn't take up any space*/
+/*Good for hidden elements (obviously)*/
+.example-table{
+    display:none;
+}
+
+/*display:block; brings on different line
+display:inline; brings on the same line, but this does not let the height, margin-top and bottom,
+padding-top and buttom to be individually set for each element.*/
+.example-table{
+    display:inline-block; /*lets your bring everything to inline and also define their indivdual height, 
+    margin-top and bottom and padding-top and bottom display:inline-block puts block level spacing around 
+    an inline element*/
+    padding-left: 10%; /*not possible without inline-block*/
+}
+
+/*FLEXBOX*/
+/*An alternative to the boc model; allows you to arrange items*/
+/*Each flexbox element is split into the container and the items*/
+/*The container is the parent element; usually a form of div*/
+/*Flex items are child elements of the container; make up the contents of the box*/
+/**/
