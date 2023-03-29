@@ -316,7 +316,10 @@ padding-top and buttom to be individually set for each element.*/
     /*"space-between" ==> equal space between each item, "space-around" does the same but also creates space at the edges*/
 
     align-items: center; /*Does the same thing as justify but on the vertical axis; flex-start, center, and flex-end still work*/
-    
+    /*"stretch" stretches them across the whole container, while "baseline" aligns them all to a baseline (regardless of original size)*/
+
+    /*Note that in the html an order style can be used to order them without changing the position of the divs*/
+    /*Check html sheet for flex-grow, flex-shrink, and flex-basis*/
 }
 
 .container-item {
